@@ -9,6 +9,7 @@ services:
       context: .
       args:
         - NODE_ENV=development
+    image: gadshrim/gad-good-defaults:${BUILD_ID}
     # you can use legacy debug config or new inspect
     # NOTE: if nodemon isn't restarting on changes, you might be on Windows
     # which has trouble seeing file changes, so add -L to use legacy polling
